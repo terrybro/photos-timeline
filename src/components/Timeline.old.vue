@@ -1,9 +1,19 @@
 <template>
-    <div class="timeline">
-        <div v-for="(date, id) in dates" @click="setDate(date.date, id)" class="date" :class="{ active : active_el == id }"  >
-          <span>{{date.date}}</span>
-        </div>
+  <div>
+    <div id="timeline">
+      <ul>
+        <li v-for="(date, id) in dates" @click="setDate(date.date, id)" :class="{ active : active_el == id }"  >
+          {{date.date}}
+        </li>
+      </ul>
+      <div class="btn" @click="slide(-1)">
+        <
+      </div>
+      <div class="btn btn-next" @click="slide(1)">
+        >
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -14,6 +24,7 @@
       }
     },
     methods:{
+
       setDate:function(date, i){
         this.activate(i);
         this.$emit('theDate', date)
@@ -25,37 +36,16 @@
     props: ['dates']
   }
 </script>
-
 <style scoped>
-span{
-  cursor: pointer;
+#timeline{
+  white-space: nowrap;
+  overflow: hidden;
+  height:48px;
+  position: relative;
 }
-.timeline{
-  color: white;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  cursor: ew-resize;
-}
-.timeline .date{
-  flex: 0 0 auto;
-}
-.date{
-  border: 2px solid red;
-  padding: 4px;
-  width: 150px;
-  background: black;
-}
-.timeline {
-  height: 48px;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-.timeline::-webkit-scrollbar { width: 0 !important }
-
 .active {
   color:red;
-  font-size: 110%;
+  font-weight:bold;
 }
 .btn {
   color: #fff;

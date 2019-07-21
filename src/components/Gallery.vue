@@ -2,9 +2,9 @@
   <div id="modal">
     <transition-group tag="div" :name="transitionName">
       <div id="gallery" v-if="show" :key="imgIndex" class="slide">
-        <h1 v-if="captions" class="legend title">{{`${entry.images[imgIndex].title}`}}</h1>
-        <h3  v-if="captions" class="legend caption">{{`${entry.images[imgIndex].caption}`}}</h3>
-        <img :src="`${entry.images[imgIndex].url}`"  />
+        <h1 v-if="captions" class="legend title">{{`${images[imgIndex].title}`}}</h1>
+        <h3  v-if="captions" class="legend caption">{{`${images[imgIndex].caption}`}}</h3>
+        <img :src="`${images[imgIndex].url}`"  />
       </div>
     </transition-group>
     <div class="btn" @click="slide(-1)"><</div>
@@ -27,7 +27,7 @@ export default {
       captions:true
     }
   },
-  props:["entry", "imgIndex"],
+  props:["imgIndex", "images"],
   computed:{
 
   },
@@ -40,7 +40,7 @@ export default {
      dir === 1
        ? (this.transitionName = "slide-next")
        : (this.transitionName = "slide-prev");
-     var len = this.entry.images.length;
+     var len = this.images.length;
      let newIndex = (this.imgIndex + dir % len + len) % len;
      this.$emit('current', newIndex)
    },
@@ -51,6 +51,9 @@ export default {
 }
 </script>
 <style scoped>
+img{
+  width:600px;
+}
 input, label{
   position: absolute;
   top: 22px;

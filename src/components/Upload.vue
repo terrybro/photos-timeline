@@ -1,30 +1,38 @@
 <template>
-  <transition>
-  <div v-if="show" :key="0">
-    <form id="form">
-      <div>
+  <div class="form" v-if="show" :key="0">
+    <form>
         <label>Add photo</label>
+                  <p @click='show'>x</p>
         <div>
           <input type="text" placeholder="Photo title">
-          <p @click='show'>
-            x
-          </p>
         </div>
-      </div>
-      <div>
-        <label>Caption</label>
         <div>
-          <textarea rows="5" placeholder="Photo caption"></textarea>
+          <input type="text" placeholder="Photo caption">
         </div>
-      </div>
+          <select class="date">
+            <option value="">01</option>
+            <option value="">Month</option>
+            <option value="">Year</option>
+          </select>
+          <select class="date">
+            <option value="">01</option>
+            <option value="">Month</option>
+            <option value="">Year</option>
+          </select>
+          <select class="date">
+            <option value="">2019</option>
+            <option value="">Month</option>
+            <option value="">Year</option>
+          </select>
+
       <div>
-        <div>
-          <button type="file">Select image</button><button type="submit" class="upload">Upload</button>
-        </div>
+
+          <button type="file">Select Image</button>
+          <input type="submit" value="Load Photo">
+
       </div>
     </form>
   </div>
-</transition>
 </template>
 
 <script>
@@ -43,36 +51,57 @@
   }
 </script>
 <style scoped>
+.date option{
+  display: inline;
+  width: 30px;
+}
+p{
+  width: 34px;
+  float: right;
+  text-align: right;
+}
 #form{
   position: fixed;
   padding: 12px;
-  top: 0;
-  bottom: 0;
+  top: 200px;
   left: 60%;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
 }
-#form p{
-  position: absolute;
-  top: 22px;
-  right: 44px;
-  color: #fff;
+input[type=text], select, button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-#form button{
-  padding: 6px
-}
-.slide {
-  transition: all 0.5s;
 
+input[type=submit], button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform 0.5s ease-in-out;
+
+input[type=submit], button:hover {
+  background-color: #45a049;
 }
-.slide-enter {
-  transform: translate(100%);
+
+div .form {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
-.slide-leave-to {
-  transform: translate(-100%);
+.date option{
+  display: inline;
+  width: 30px;
 }
+
 </style>
