@@ -87,7 +87,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/01/2014",
-             "album":"xmas"
+             "album":"xmas",
+             "icon" : xmas
            },
            {
              "id":4,
@@ -126,7 +127,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/03/2014",
-             "album":"birthday"
+             "album":"birthday",
+             "icon" : bday
            },
            {
              "id":8,
@@ -135,7 +137,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/03/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
 
            },
            {
@@ -145,7 +148,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"26/05/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":10,
@@ -154,7 +158,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"26/05/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":11,
@@ -163,7 +168,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"27/05/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":12,
@@ -172,7 +178,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"27/05/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":13,
@@ -181,7 +188,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"27/05/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":14,
@@ -190,7 +198,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":15,
@@ -199,7 +208,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"17/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":16,
@@ -208,7 +218,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":17,
@@ -217,7 +228,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":18,
@@ -226,7 +238,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":19,
@@ -235,7 +248,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"17/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":20,
@@ -244,7 +258,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/06/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":21,
@@ -253,7 +268,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/07/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
            {
              "id":22,
@@ -262,7 +278,8 @@ export default {
              "caption":"Got lost going to the Basilica of the Sacré-Coeur",
              "tags":["holiday"],
              "date":"16/07/2014",
-             "album":""
+             "album":"",
+             "icon" : ""
            },
 
          ]
